@@ -1,0 +1,53 @@
+{
+  "info": {
+    "description": "Shared Release Fixture"
+  },
+  "images": [
+    {
+      "id": 1,
+      "file_name": "images/scene_001.jpg",
+      "width": 640,
+      "height": 480,
+      "split": "train",
+      "coco_url": "https://example.com/images/scene_001.jpg"
+    },
+    {
+      "id": 2,
+      "file_name": "images/scene_002.jpg",
+      "width": 800,
+      "height": 600,
+      "split": "val"
+    }
+  ],
+  "categories": [
+    {
+      "id": 10,
+      "name": "signal-object",
+      "supercategory": "object"
+    },
+    {
+      "id": 20,
+      "name": "reference-marker",
+      "supercategory": "object"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 100,
+      "image_id": 1,
+      "category_id": 10,
+      "bbox": [10, 20, 30, 40],
+      "segmentation": [[10, 20, 40, 20, 40, 60, 10, 60]],
+      "area": 1200,
+      "iscrowd": 0
+    },
+    {
+      "id": 101,
+      "image_id": 2,
+      "category_id": 20,
+      "bbox": [100, 120, 80, 60],
+      "area": 4800,
+      "iscrowd": 0
+    }
+  ]
+}

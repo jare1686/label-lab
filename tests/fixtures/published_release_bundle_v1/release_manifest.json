@@ -1,0 +1,54 @@
+{
+  "artifact_paths": {
+    "annotations_coco": "annotations.coco.json",
+    "assets_table": "assets.parquet",
+    "categories_table": "categories.parquet"
+  },
+  "bundle_kind": "dataset_release_bundle",
+  "canonical_annotation_format": "COCO",
+  "contract_name": "published_artifact_bundle_contract",
+  "contract_version": "1.0.0",
+  "counts": {
+    "annotation_count": 2,
+    "asset_count": 2,
+    "category_count": 2
+  },
+  "created_at_utc": "2026-03-25T13:13:36Z",
+  "dataset": {
+    "dataset_id": "shared-release-fixture",
+    "dataset_name": "Shared Release Fixture",
+    "dataset_version": "1.2.0"
+  },
+  "lineage": [
+    {
+      "artifact": "demo_source_coco.json",
+      "commit_sha": "f69f8b8e5411ea4b047b556e28a5c40fefe1a916",
+      "notes": "Source COCO annotations used as the release input.",
+      "repo": "label-lab",
+      "stage": "source_ingest"
+    },
+    {
+      "artifact": "release_manifest.json",
+      "commit_sha": "f69f8b8e5411ea4b047b556e28a5c40fefe1a916",
+      "notes": "Portable contract bundle emitted by label-lab.",
+      "repo": "label-lab",
+      "stage": "publication"
+    }
+  ],
+  "notes": [],
+  "publisher_commit_sha": "f69f8b8e5411ea4b047b556e28a5c40fefe1a916",
+  "publisher_repo": "label-lab",
+  "release_id": "shared-release-fixture-1-2-0",
+  "release_version": "1.2.0",
+  "source_formats": [
+    "COCO"
+  ],
+  "split_summary": {
+    "train": 1,
+    "val": 1
+  },
+  "task_types": [
+    "bbox",
+    "instance_segmentation"
+  ]
+}

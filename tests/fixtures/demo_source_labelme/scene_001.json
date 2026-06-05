@@ -1,0 +1,28 @@
+{
+  "version": "5.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "signal-object",
+      "points": [
+        [
+          120.0,
+          80.0
+        ],
+        [
+          260.0,
+          220.0
+        ]
+      ],
+      "group_id": 11,
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    }
+  ],
+  "imagePath": "scene_001.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

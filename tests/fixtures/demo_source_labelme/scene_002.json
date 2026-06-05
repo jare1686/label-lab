@@ -1,0 +1,32 @@
+{
+  "version": "5.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "reference-marker",
+      "points": [
+        [
+          50.0,
+          60.0
+        ],
+        [
+          80.0,
+          40.0
+        ],
+        [
+          90.0,
+          90.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {
+        "reviewed": true
+      }
+    }
+  ],
+  "imagePath": "scene_002.jpg",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800
+}

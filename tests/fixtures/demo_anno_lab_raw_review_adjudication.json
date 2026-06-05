@@ -1,0 +1,21 @@
+{
+  "artifact_kind": "anno_lab_raw_review_adjudication",
+  "artifact_version": "1.0.0",
+  "source_artifact_kind": "anno_lab_raw_review_groups",
+  "source_artifact_version": "1.0.0",
+  "source_export": {
+    "source_artifact": "demo_anno_lab_raw_repeated_measure_export.json",
+    "source_project_id": "101",
+    "source_project_slug": "anno-lab-raw-demo",
+    "source_project_name": "Anno Lab Raw Demo"
+  },
+  "decisions": [
+    {
+      "group_id": "task-501",
+      "selected_annotation_id": 703,
+      "adjudicator_id": "reviewer-redacted-001",
+      "decided_at": "2026-03-24T09:10:00Z",
+      "decision_note": "Selected annotation 703 for tighter person and crate boxes."
+    }
+  ]
+}

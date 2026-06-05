@@ -1,0 +1,214 @@
+{
+  "annotations": [
+    {
+      "actor": "worker-redacted-001",
+      "assignment_id": 601,
+      "created_at": "2026-03-23T16:35:11Z",
+      "id": 701,
+      "raw_payload": {
+        "ingested_via": "mturk",
+        "source": "instance-bbox"
+      },
+      "result": {
+        "objects": [
+          {
+            "bbox": {
+              "height": 220,
+              "width": 140,
+              "x": 80,
+              "y": 60
+            },
+            "id": "box-1",
+            "label": "person"
+          },
+          {
+            "bbox": {
+              "height": 90,
+              "width": 120,
+              "x": 320,
+              "y": 260
+            },
+            "id": "box-2",
+            "label": "crate"
+          }
+        ]
+      },
+      "schema_version": "1.0.0",
+      "submission_id": "submission-701",
+      "task_id": 501,
+      "tool_version": "instance-bbox@0.1.5"
+    },
+    {
+      "actor": "worker-redacted-002",
+      "assignment_id": 602,
+      "created_at": "2026-03-23T17:02:44Z",
+      "id": 702,
+      "raw_payload": {
+        "ingested_via": "mturk",
+        "source": "instance-bbox"
+      },
+      "result": {
+        "objects": [
+          {
+            "bbox": {
+              "height": 230,
+              "width": 160,
+              "x": 110,
+              "y": 90
+            },
+            "id": "box-3",
+            "label": "person"
+          }
+        ]
+      },
+      "schema_version": "1.0.0",
+      "submission_id": "submission-702",
+      "task_id": 502,
+      "tool_version": "instance-bbox@0.1.5"
+    }
+  ],
+  "assignments": [
+    {
+      "assignment_id": "ASSIGNMENT-RAW-001",
+      "backend": "mturk",
+      "created_at": "2026-03-23T16:30:00Z",
+      "hit_id": "HIT-RAW-001",
+      "id": 601,
+      "ingested_at": null,
+      "last_polled_at": "2026-03-23T16:34:58Z",
+      "payload": {
+        "answers": {
+          "annotation": "{\"result\":{\"objects\":[{\"id\":\"box-1\",\"label\":\"person\"},{\"id\":\"box-2\",\"label\":\"crate\"}]}}"
+        },
+        "mturk_record": {
+          "AssignmentId": "ASSIGNMENT-RAW-001",
+          "HITId": "HIT-RAW-001",
+          "WorkerId": "worker-redacted-001"
+        }
+      },
+      "sandbox": true,
+      "status": "submitted",
+      "task_id": 501,
+      "updated_at": "2026-03-23T16:34:58Z",
+      "worker_id": "worker-redacted-001"
+    },
+    {
+      "assignment_id": "ASSIGNMENT-RAW-002",
+      "backend": "mturk",
+      "created_at": "2026-03-23T16:58:00Z",
+      "hit_id": "HIT-RAW-002",
+      "id": 602,
+      "ingested_at": null,
+      "last_polled_at": "2026-03-23T17:02:20Z",
+      "payload": {
+        "answers": {
+          "annotation": "{\"result\":{\"objects\":[{\"id\":\"box-3\",\"label\":\"person\"}]}}"
+        },
+        "mturk_record": {
+          "AssignmentId": "ASSIGNMENT-RAW-002",
+          "HITId": "HIT-RAW-002",
+          "WorkerId": "worker-redacted-002"
+        }
+      },
+      "sandbox": true,
+      "status": "approved",
+      "task_id": 502,
+      "updated_at": "2026-03-23T17:02:20Z",
+      "worker_id": "worker-redacted-002"
+    }
+  ],
+  "assets": [
+    {
+      "created_at": "2026-03-23T15:10:00Z",
+      "height": 480,
+      "id": 301,
+      "media_type": "image",
+      "metadata": {
+        "split": "train"
+      },
+      "project_id": 101,
+      "s3_key": "exports/train/slide_001.jpg",
+      "sha256": "demo-sha-001",
+      "width": 640
+    },
+    {
+      "created_at": "2026-03-23T15:11:00Z",
+      "height": 512,
+      "id": 302,
+      "media_type": "image",
+      "metadata": {
+        "split": "val"
+      },
+      "project_id": 101,
+      "s3_key": "exports/val/slide_002.jpg",
+      "sha256": "demo-sha-002",
+      "width": 768
+    }
+  ],
+  "export_contract": "anno_lab_raw_collection_export",
+  "export_version": "1.0.0",
+  "exported_at": "2026-03-23T17:10:00Z",
+  "project": {
+    "created_at": "2026-03-23T15:00:00Z",
+    "description": "Synthetic sanitized raw export fixture for label-lab adapter coverage.",
+    "id": 101,
+    "name": "Anno Lab Raw Demo",
+    "slug": "anno-lab-raw-demo"
+  },
+  "summary": {
+    "annotation_count": 2,
+    "asset_count": 2,
+    "assignment_count": 2,
+    "task_count": 2
+  },
+  "task_definitions": [
+    {
+      "created_at": "2026-03-23T15:05:00Z",
+      "definition": {
+        "object_classes": [
+          "person",
+          "crate"
+        ]
+      },
+      "id": 201,
+      "task_type_id": 11,
+      "version": "1.0.0"
+    }
+  ],
+  "task_types": [
+    {
+      "description": "Instance bounding boxes",
+      "id": 11,
+      "name": "Instance Bounding Box",
+      "slug": "instance_bbox"
+    }
+  ],
+  "tasks": [
+    {
+      "asset_id": 301,
+      "assigned_to": "",
+      "created_at": "2026-03-23T15:20:00Z",
+      "id": 501,
+      "payload": {
+        "batch": "wave-1"
+      },
+      "priority": 0,
+      "project_id": 101,
+      "status": "complete",
+      "task_definition_id": 201
+    },
+    {
+      "asset_id": 302,
+      "assigned_to": "",
+      "created_at": "2026-03-23T15:22:00Z",
+      "id": 502,
+      "payload": {
+        "batch": "wave-1"
+      },
+      "priority": 0,
+      "project_id": 101,
+      "status": "complete",
+      "task_definition_id": 201
+    }
+  ]
+}

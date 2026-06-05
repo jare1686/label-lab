@@ -1,0 +1,75 @@
+{
+  "annotations": [
+    {
+      "area": 1200,
+      "bbox": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "category_id": "10",
+      "id": "100",
+      "image_id": "1",
+      "iscrowd": 0,
+      "segmentation": [
+        [
+          10,
+          20,
+          40,
+          20,
+          40,
+          60,
+          10,
+          60
+        ]
+      ]
+    },
+    {
+      "area": 4800,
+      "bbox": [
+        100,
+        120,
+        80,
+        60
+      ],
+      "category_id": "20",
+      "id": "101",
+      "image_id": "2",
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "10",
+      "name": "signal-object",
+      "supercategory": "object"
+    },
+    {
+      "id": "20",
+      "name": "reference-marker",
+      "supercategory": "object"
+    }
+  ],
+  "images": [
+    {
+      "file_name": "images/scene_001.jpg",
+      "height": 480,
+      "id": "1",
+      "source_path_or_uri": "https://example.com/images/scene_001.jpg",
+      "split": "train",
+      "width": 640
+    },
+    {
+      "file_name": "images/scene_002.jpg",
+      "height": 600,
+      "id": "2",
+      "source_path_or_uri": "images/scene_002.jpg",
+      "split": "val",
+      "width": 800
+    }
+  ],
+  "info": {
+    "description": "Shared Release Fixture"
+  }
+}
